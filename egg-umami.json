@@ -160,6 +160,87 @@
                 "string",
                 "max:64"
             ]
+        },
+        {
+            "sort": null,
+            "name": "DB_TYPE",
+            "description": "Type of database WikiJS should use",
+            "env_variable": "DB_TYPE",
+            "default_value": "mysql",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": [
+                "required",
+                "string",
+                "in:mysql,postgres"
+            ]
+        },
+        {
+            "sort": null,
+            "name": "DB_HOST",
+            "description": "Hostname or IP of the database",
+            "env_variable": "DB_HOST",
+            "default_value": "localhost",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": [
+                "nullable",
+                "string",
+                "max:128"
+            ]
+        },
+        {
+            "sort": null,
+            "name": "DB_PORT",
+            "description": "Port of the database",
+            "env_variable": "DB_PORT",
+            "default_value": "3306",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": [
+                "Integer"
+            ]
+        },
+        {
+            "sort": null,
+            "name": "DB_USER",
+            "description": "Username to connect to the database",
+            "env_variable": "DB_USER",
+            "default_value": "root",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": [
+                "string",
+                "max:32"
+            ]
+        },
+        {
+            "sort": null,
+            "name": "DB_PASS",
+            "description": "Password to connect to the database",
+            "env_variable": "DB_PASS",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": [
+                "nullable",
+                "string",
+                "max:128"
+            ]
+        },
+        {
+            "sort": null,
+            "name": "DB_NAME",
+            "description": "Database name",
+            "env_variable": "DB_NAME",
+            "default_value": "root",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": [
+                "string",
+                "max:64"
+            ]
         }
+
     ]
 }
